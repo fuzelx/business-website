@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56a4b8eed4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@400;500;600;700;800&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="output.css">
+    <title>Galaxy Eyewear</title>
+</head>
+<style>
+body{
+    font-family: 'DM sans', sans-serif; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+  }
+
+        /* Custom styles */
+        .side-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .side-menu {
+                display: block;
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100%;
+                background-color: #ffffff;
+                transition: left 0.3s ease;
+            }
+
+            .side-menu.show {
+                left: 0;
+            }
+        }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white border-b-[1px] border-neutral-800 fixed top-0 w-full p-3">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-black  text-lg font-extrabold">Galaxy Eyewear</a>
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-black"><i class="fa-solid fa-house fa-sm" style="color: #000000;"></i> Home</a></li>
+                    <li><a href="#" class="text-black"><i class="fa-solid fa-circle-info fa-sm" style="color: #000000;"></i> About</a></li>
+                    <li><a href="#" class="text-black">Services</a></li>
+                    <li><a href="#" class="text-black">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Menu (Mobile) -->
+    <div id="side-menu" class="side-menu shadow-md">
+        <div class="p-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="#" class="text-black">Home</a></li>
+                <li><a href="#" class="text-black">About</a></li>
+                <li><a href="#" class="text-black">Services</a></li>
+                <li><a href="#" class="text-black">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="bg-[#2196f3] mt-10  text-white py-12">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center">
+              <!-- Image Section -->
+              <div class="lg:w-1/2 mb-8 p-2 lg:mb-0">
+                <img src="img/Down in the South_.jpg" alt="Eyewear Store" class="rounded-lg shadow-lg">
+              </div>
+              
+              <!-- Text and Button Section -->
+              <div class="lg:w-1/2 p-3 lg:ml-12">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-4">See the World Through Style</h1>
+                <p class="text-lg mb-6">Step into a world where clarity meets style. Find the perfect frames that not only enhance your vision but also elevate your entire look. See the difference with our curated eyewear collection.</p>
+                <a href="#" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300">Explore Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- HERO SECTION ENDS HERE -->
+
+          <!-- ITEM SECTION-1 -->
+          <div class="container mx-auto py-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Featured Items</h2>
+            <div class="overflow-x-auto whitespace-no-wrap scroll-container">
+              <div class="flex flex-nowrap space-x-4">
+
+                
+                <!-- Item 1 -->
+                <div class="flex-shrink-0 w-64 bg-white rounded-lg  p-4 flex justify-centre items-center flex-col">
+                  <img src="img/Jacques Marie Mage Five Year Anniversary Limited Edition Designs.jpg" alt="Item 1" class="w-full rounded-lg mb-2">
+                  <h3 class="text-lg font-semibold text-center">Item 1 Name</h3>
+                  <p class="text-gray-700 text-center">Description of item 1.</p>
+                  <a href="" class="bg-[#25D366] p-3 rounded-2xl font-bold m-2"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> Buy on Whatsapp</a>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex-shrink-0 w-64 bg-white rounded-lg  p-4 flex justify-centre items-center flex-col">
+                  <img src="img/Jacques Marie Mage Five Year Anniversary Limited Edition Designs.jpg" alt="Item 2" class="w-full rounded-lg mb-2">
+                  <h3 class="text-lg font-semibold text-center">Item 2 Name</h3>
+                  <p class="text-gray-700  text-center">Description of item 2.</p>
+                  <a href="" class="bg-[#25D366] p-3 rounded-2xl font-bold m-2"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> Buy on Whatsapp</a>
+                </div>
+
+                <div class="flex-shrink-0 w-64 bg-white rounded-lg  p-4 flex justify-centre items-center flex-col">
+                    <img src="img/Jacques Marie Mage Five Year Anniversary Limited Edition Designs.jpg" alt="Item 2" class="w-full rounded-lg mb-2">
+                    <h3 class="text-lg font-semibold text-center">Item 2 Name</h3>
+                    <p class="text-gray-700 text-center">Description of item 2.</p>
+                    <a href="" class="bg-[#25D366] p-3 rounded-2xl font-bold m-2"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> Buy on Whatsapp</a>
+                  </div>
+
+                  <div class="flex-shrink-0 w-64 bg-white rounded-lg  p-4 flex justify-centre items-center flex-col">
+                    <img src="img/Jacques Marie Mage Five Year Anniversary Limited Edition Designs.jpg" alt="Item 2" class="w-full rounded-lg mb-2">
+                    <h3 class="text-lg font-semibold text-center">Item 2 Name</h3>
+                    <p class="text-gray-700 text-center">Description of item 2.</p>
+                    <a href="" class="bg-[#25D366] p-3 rounded-2xl font-bold m-2"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> Buy on Whatsapp</a>
+                  </div>
+
+                  <div class="flex-shrink-0 w-64 bg-white rounded-lg  p-4 flex justify-centre items-center flex-col">
+                    <img src="img/Jacques Marie Mage Five Year Anniversary Limited Edition Designs.jpg" alt="Item 2" class="w-full rounded-lg mb-2">
+                    <h3 class="text-lg  text-centerfont-semibold">Item 2 Name</h3>
+                    <p class="text-gray-700 text-center">Description of item 2.</p>
+                    <a href="" class="bg-[#25D366] p-3 rounded-2xl  font-boldm-2"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> Buy on Whatsapp</a>
+                  </div>
+                <!-- Repeat for more items -->
+              </div>
+            </div>
+          </div>
+          
+
+  <!--  services. -->
+<div class="p-1">
+  
+  <div class="text-center justify-center flex items-center flex-col mt-4 mb-8">
+    <h1 class="text-center text-3xl font-extrabold  ">Our Services</h1>
+    <div class="border-b-2 border-black w-52 mt-2"></div>
+  </div>
+<div class="flex justify-evenly flex-wrap items-center p-3">
+  <div class="flex justify-center flex-col items-center">
+    <img src="img/eyeglasses.png" class="w-48 h-48" alt="">
+    <h2 class="font-bold text-2xl text-center">Eye Power Testing</h2>
+  </div>
+
+  <div class="flex justify-center flex-col items-center">
+    <img src="img/check-up.png" class="w-44 h-44" alt="">
+    <h2 class="font-bold text-2xl mt-6 text-center">Eye Power Testing</h2>
+  </div>
+
+  <div class="flex justify-center flex-col items-center">
+    <img src="img/eyeglases.png" class="w-48 h-48" alt="">
+    <h2 class="font-bold text-2xl text-center">Specs Repairng</h2>
+  </div>
+
+  <div class="flex justify-center flex-col items-center">
+    <img src="img/urgent.png" class="w-48 h-48" alt="">
+    <h2 class="font-bold text-2xl text-center">Urgent specs <br> delivery </h2>
+  </div>
+</div>
+</div>
+    </main>
+
+<footer class="bg-[#2196f3] text-white py-8">
+    <div class="container mx-auto flex flex-wrap justify-between">
+        <!-- Store Info -->
+        <div class="w-full md:w-1/4 mb-4 md:mb-0">
+            <h3 class="text-lg font-bold mb-2 flex items-center">
+                
+                Galaxy Eyewear
+            </h3>
+             <p class="text-sm"> <span><i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i></span> opp. Noor stationary, near fatehwadi, Navrang Society, Fatehwadi, tower, Juhapura, Ahmedabad, Gujarat 380055, India 
+              <br></p> 
+            <p class="text-sm mt-2"><span><i class="fa-solid fa-phone fa-sm" style="color: #ffffff;"></i></span> Mobile: <a href="tel:+1234567890">+91 8735871937</a></p>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="w-full md:w-1/4 mb-4 md:mb-0">
+            <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2a8 8 0 0 1 5.657 13.657l-4.392-4.392a3.5 3.5 0 1 0-4.95 4.95l-4.392 4.392A8 8 0 1 1 10 2zm0 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-1.707 6.707a1 1 0 1 0 1.414 1.414 3.5 3.5 0 1 1-4.95 4.95 1 1 0 0 0 1.414 1.414 5.5 5.5 0 1 0 7.778 0 1 1 0 1.414A7.5 7.5 0 1 1 8.293 11.707z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-gray-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a8 8 0 0 1 5.657 13.657l-4.392-4.392a3.5 3.5 0 1 0-4.95 4.95l-4.392 4.392A8 8 0 1 1 10 2zm0 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-1.707 2.293a1 1 0 1 0 1.414 1.414 3.5 3.5 0 1 1-4.95 4.95 1 1 0 0 0 1.414 1.414 5.5 5.5 0 1 0 7.778 0 1 1 0 1.414A7.5 7.5 0 1 1 8.293 11.707z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-gray-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 2a8 8 0 0 1 5.657 13.657l-4.392-4.392a3.5 3.5 0 1 0-4.95 4.95l-4.392 4.392A8 8 0 1 1 10 2zm0 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm0 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-1.707 2.293a1 1 0 1 0 1.414 1.414 3.5 3.5 0 1 1-4.95 4.95 1 1 0 0 0 1.414 1.414 5.5 5.5 0 1 0 7.778 0 1 1 0 1.414A7.5 7.5 0 1 1 8.293 11.707z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Toggle side menu visibility
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('side-menu').classList.toggle('show');
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+    
+</body>
+</html>
